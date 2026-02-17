@@ -1,0 +1,36 @@
+import React from 'react';
+import { Linkedin, Github, Mail } from 'lucide-react';
+
+const Contact = () => {
+  return (
+    <section id="contact" className="py-16 text-center">
+      <h2 className="text-3xl md:text-4xl font-bold mb-8">Contact</h2>
+      <div className="flex justify-center space-x-8">
+        <a
+          href="https://linkedin.com/in/hossamahmedd"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-500 hover:text-blue-400 transition duration-300"
+        >
+          <Linkedin className="w-8 h-8" />
+        </a>
+        <a
+          href="https://github.com/HossamAhmed02"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-500 hover:text-blue-400 transition duration-300"
+        >
+          <Github className="w-8 h-8" />
+        </a>
+        <a
+          href="mailto:hossam.a7med02@gmail.com"
+          className="text-blue-500 hover:text-blue-400 transition duration-300"
+        >
+          <Mail className="w-8 h-8" />
+        </a>
+      </div>
+    </section>
+  );
+};
+
+export default Contact;
