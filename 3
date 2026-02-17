@@ -1,0 +1,35 @@
+import React from 'react';
+import { Code, Database, GitBranch, TestTube } from 'lucide-react';
+
+const Skills = () => {
+  const skills = [
+    { name: '.NET Core', icon: Code },
+    { name: 'ASP.NET Web API', icon: Code },
+    { name: 'Entity Framework (Code First/Fluent API)', icon: Database },
+    { name: 'SQL Server', icon: Database },
+    { name: 'Git/GitHub', icon: GitBranch },
+    { name: 'Unit Testing', icon: TestTube },
+  ];
+
+  return (
+    <section id="skills" className="py-16">
+      <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Skills</h2>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {skills.map((skill, index) => {
+          const IconComponent = skill.icon;
+          return (
+            <div
+              key={index}
+              className="bg-slate-800 p-6 rounded-lg text-center hover:bg-slate-700 transition duration-300"
+            >
+              <IconComponent className="w-12 h-12 mx-auto mb-4 text-blue-500" />
+              <h3 className="text-xl font-semibold">{skill.name}</h3>
+            </div>
+          );
+        })}
+      </div>
+    </section>
+  );
+};
+
+export default Skills;
