@@ -1,0 +1,25 @@
+import React from 'react';
+
+const FeaturedProject = () => {
+  return (
+    <section id="project" className="py-16">
+      <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Featured Project</h2>
+      <div className="bg-slate-800 p-8 rounded-lg max-w-2xl mx-auto">
+        <h3 className="text-2xl font-semibold mb-4 text-blue-500">
+          A Mobile App for the Deaf and Mute
+        </h3>
+        <p className="text-lg leading-relaxed mb-4">
+          This graduation project translates Sign Language into text and audio, bridging communication gaps. My role involved designing the database schema and building robust RESTful APIs to handle data processing and real-time translations.
+        </p>
+        <a
+          href="#contact"
+          className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded transition duration-300"
+        >
+          Get in Touch
+        </a>
+      </div>
+    </section>
+  );
+};
+
+export default FeaturedProject;
